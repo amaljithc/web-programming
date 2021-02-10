@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<center>click to try new colour<br><br><button type="button" id="bt">Try New </button></center>
+<script>
+document.getElementById("bt").addEventListener("click",changeColor);
+function changeColor()
+{
+var random="";
+for(var i=0;i<6;i++){
+random+=Math.floor(Math.random()*10);
+}
+document.body.style.background="#"+random;
+}
+</script>
+</body>
+</html>

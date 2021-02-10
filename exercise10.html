@@ -1,0 +1,25 @@
+<html><head><title>exc10</title>
+<style>
+div{height:30%;width:30%;padding:15px;margin:auto;border:solid;}
+</style></head>
+<body><br><br><br><div>
+<center id="center">
+ <img src="morning.jpg" id="img" height="60%" width="60%"><br><br>
+ <h1 id="text1" style="color:pink";>Mouse on</h1> 
+</center>
+<script>
+document.getElementById("center").addEventListener("mouseover",on);
+document.getElementById("center").addEventListener("mouseout",out);
+function on(){
+document.getElementById("img").src="Default.jpg";
+document.getElementById("text1").innerHTML="Mouse over";
+ 
+
+}
+function out(){
+document.getElementById("img").src="morning.jpg";
+document.getElementById("text1").innerHTML="Mouse out";
+
+
+}
+</script></div></body></html>

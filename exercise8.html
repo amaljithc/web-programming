@@ -1,0 +1,84 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script lang="javaScript">
+          function validation() {
+      
+         if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 6 ) {
+            
+            alert( "Please provide a zip in the format ######(max six )." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+	if(document.myForm.phone.value==""||isNaN(document.myForm.phone.value)||
+document.myForm.phone.value.length!=10)
+	{
+		alert("please provide a valid number");
+		document.myForm.phone.focus();
+		return false;
+	}
+         if( document.myForm.Country.value == "0" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+      </script>      
+   </head>
+   
+   <body bgcolor="pink">
+  <br><br><br>
+   <center><h1>Registration Form</h1></center>
+      <form  name = "myForm" onsubmit = "return(validation());">
+         <table align="center" bgcolor="yellow" cellspacing = "5" cellpadding = "10" border = "3">
+            
+            <tr>
+               <td align = "right">Name</td>
+               <td><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">EMail</td>
+               <td><input type = "text" name = "EMail" /></td>
+            </tr>
+            
+            <tr>
+               <td align = "right">Zip Code</td>
+               <td><input type = "text" name = "Zip" /></td>
+            </tr>
+	    <tr>
+		<td align="right">Phone</td>
+		<td><input type="text" name="phone"/></td>
+            
+            <tr>
+               <td align = "right">Country</td>
+               <td>
+                  <select name = "Country">
+                     <option value = "0" selected>[choose yours]</option>
+                     <option value = "1">INDIA</option>
+                     <option value = "2">CHINA</option>
+                     <option value = "3">S.KOREA</option>
+                  </select>
+               </td>
+            </tr>
+            
+            <tr>
+               <td align = "right"></td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table>
+      </form>      
+   </body>
+</html>
