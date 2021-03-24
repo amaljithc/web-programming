@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+}
+
+body{
+	font-family: TIMESNEWROMAN;
+}
+#allTheThings input[type="button"] {
+	width:30%;
+	border: none;
+	background: #DC143C;
+	border-radius: .2em;
+	padding: 18px;
+	
+	margin:20px;
+	margin-bottom: 20px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.6rem;
+
+	cursor: pointer;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+
+#allTheThings input[type="button"]:focus {
+  outline: none;
+  background:#32CD32;
+}
+
+#allTheThings input[type="button"]:active {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+a{
+	text-decoration: none;
+}
